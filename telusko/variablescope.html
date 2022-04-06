@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Scope of Variable</title>
+        <script type="text/javascript">
+        /*
+        var a=6;
+        function myFunction()
+        {
+            var b=9;
+            document.write("<h1>"+a+"</h1>")
+            document.write("<h1>"+b+"</h1>")
+        }
+        myFunction();
+        document.write("<h1>"+a+"</h1>");
+        */
+
+        var cars=["audi" , "BMW" , "volvo"];
+        cars.push("kya")
+        var arr1;
+        arr1 = new Array ("ferrari" , "mustang" , "eicher");
+        arr1.push(7)
+        for (var i=0; i<4; i++) //i<cars.lenght -- it will automatically save the lenght according to items added in cars.push
+        {
+            document.write("<h1>"+arr1[i]+"</h1>");
+            document.write("<h1>"+cars[i]+"</h1>");
+        }
+        
+            
+        
+        </script>
+    </head>
+</html>

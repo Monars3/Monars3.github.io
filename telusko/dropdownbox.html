@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Drop down box</title>
+        <script type="text/javascript">
+            function fn1()
+            {
+                let select = document.getElementById("selectbox");
+                alert(select.options.value)
+            }
+         
+        </script>
+    </head>
+    <body>
+        <select id="selectbox">
+            <option value="simple snippets">Simple snippets</option>
+            <option value="JS learnings">JS learnings</option>
+            <option value="why haa">why haa</option>
+        </select>
+        <br><br>
+        <button onclick="fn1()">Click Me</button>
+        
+    </body>
+</html>

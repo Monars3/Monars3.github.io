@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Effects in Jquery 3</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h2>Callback & chaining Effects</h2>
+        <button id="btntoggle">Toggle</button>
+        <div id="firstdiv" class="mydivs">
+            <p>This is first paragraph in first divison</p>
+            <p>This is second paragraph in second divison</p>
+        </div>
+
+        <div id="seconddiv" class="mydivs">
+            <p>This is third paragraph in second divison</p>
+
+        </div>
+
+    </body>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btntoggle").click(function(){
+                /*$("#firstdiv").slideToggle(3000,function(){
+                    alert("slide toggling done");
+                    });*/
+                    $("#firstdiv").slideUp(2000).slideDown(2000)
+                    .fadeOut(1000).fadeIn(3000);
+                
+            });
+        });
+    </script>
+</html>

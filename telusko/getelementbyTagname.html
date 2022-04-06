@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>GetElementByTagNamee</title>
+        <script type="text/javascript">
+        function changeStyling()
+        {
+            var para = document.getElementsByTagName("p");
+            //para[0].style.fontSize = 25;
+            //para[1].style.color = "red";
+            //para[3].style.fontWeight = "bold";
+            //para[2].style.fontStyle= "italic";
+            for (i=0 ; i<para.length; i++)
+            {
+                para[i].style.color = "aqua";
+            }
+        }
+
+        </script>
+
+    </head>
+    <body>
+        <p>This is Paragraph 1</p>
+        <p>This is Paragraph 2</p>
+        <p>This is Paragraph 3</p>
+        <p>This is Paragraph 4</p>
+        <p>This is Paragraph 5</p>
+        <br>
+        <button onclick="changeStyling()">Click Me</button>
+    </body>
+</html>

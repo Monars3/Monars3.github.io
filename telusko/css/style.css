@@ -1,0 +1,28 @@
+.mydivs{
+  border: 2px solid blue;
+  margin: 5px;
+  padding: 10px;
+
+}
+div p{
+    color:rgb(58, 221, 221);
+}
+ul{
+    color:aquamarine;
+}
+.mycube{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(235, 144, 8);
+    opacity: 0.5;
+    position: absolute;
+    padding: 20px;
+    
+
+}
+
+/*body{
+     border: 2px solid aquamarine;
+     margin: 5px;
+     padding: 10px;
+}*/

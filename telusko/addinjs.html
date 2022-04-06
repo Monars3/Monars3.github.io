@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Add in JS</title>
+        <script type="text/javascript">
+        function addValues()
+        {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            document.getElementById("op").innerHTML="Result= "
+            +(a+b);
+
+        }
+
+        </script>
+    </head>
+    <body>
+        <input id="t1" placeholder="Text1" type="text">
+        <br> <br>
+        <input id="t2" placeholder="Text2" type="text">
+        <br><br>
+        <button onclick="addValues()">Add</button>
+        <h2 id="op">Result = </h2>
+    </body>
+</html>

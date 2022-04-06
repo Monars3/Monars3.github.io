@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Introduction to jQuery UI</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+        <div id="mydiv">
+        <h3>Introduction to jQuery UI</h3>
+        <input id="dateinput" type="text">
+        <br><br><br>
+        <img src="download.jpeg" title="" width= "100px" id="myimg">
+
+        </div>
+
+    </body>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="jqueryui/jquery-ui.js" type="text/javascript" ></script>
+    <script>
+        $("#dateinput").datepicker({
+            numberOfMonths:2,
+            changeYear:true,
+            changeMonth:true,
+            showWeek:true,
+            weekHeader:"wk no.",
+            minDate:new Date(2017,0,1),
+            maxDate:new Date(2020,0,5)
+
+        });
+    </script>
+    <script>
+        $("img").tooltip({
+            content:"from telusko learning",
+            show:{effect:"bounce", duration:2000},
+            hide:{effect:"explode", duration:2000}
+        });
+    </script>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Dom Manipulation and getelement</title>
+        <script type="text/javascript">
+            //DOM manipulation and getelement
+            function buttonClick()
+            {
+               /* document.getElementById("heading2")
+                .innerHTML="hell yeah";*/
+                var str = document.getElementById("heading2")
+                .innerHTML;
+                alert(str);
+                //alert("Button Clicked");
+            }
+
+
+        </script>
+        <body>
+            <button onclick="buttonClick()">Click here</button>
+            <h2 id="heading2">Some Random Text</h2>
+        </body>
+    </head>
+</html>

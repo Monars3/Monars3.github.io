@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>mouseover & mouseout events</title>
+        <script type="text/javascript">
+            function setNewImage()
+            {
+                document.getElementById("img1").src
+                ="downloadg.jpeg" ;
+            }
+            function setOldImage()
+            {
+                document.getElementById("img1").src
+                ="download.jpeg" ;
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="setNewImage()" onmouseout
+        ="setOldImage()" src="download.jpeg"
+        width="300"/>
+    </body>
+</html>

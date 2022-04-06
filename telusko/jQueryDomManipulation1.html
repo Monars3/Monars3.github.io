@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>jQuery DOM manipulation part-2</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h2>jQuery - DoM manipulations part 2</h2>
+        
+        <button id="btn1">Set value</button>
+        <button id="btn2">Get value</button>
+        
+        <div id="div1" class="mydivs">
+            <p id="p1" class="p1class">This is third <b>paragraph</b> in second divison</p>
+        </div>
+
+    </body>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                alert($("#p1").css("font-size"));
+            });
+            $("#btn1").click(function(){
+                $("#p1").css("font-size" , "25px")
+            })
+
+        });
+    </script>
+</html>
